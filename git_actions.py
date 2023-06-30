@@ -7,14 +7,13 @@ def clone_repo(git_path, path=None):
 
 def commit(message="Updated Repo"):
     subprocess.run(["git", "add", "*"])
-    subprocess.run(["git", "commit", "-a", "-m", f'"{message}"'])
+    subprocess.run(["git", "commit", "-a", "-m", message])
 
 def push():
     subprocess.run(["git", "push"])
 
 clone_repo("https://github.com/Razboinicul/TestRepo", "TestRepo")
 chdir("TestRepo")
-file = open("test", "w").close()
-chdir("..")
-commit()
+file = open("test1", "w").close()
+commit("Test Commit 1")
 push()
