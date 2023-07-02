@@ -14,6 +14,6 @@ def push():
 
 clone_repo("https://github.com/Razboinicul/TestRepo", "TestRepo")
 chdir("TestRepo")
-file = open("test1", "w").close()
-commit("Test Commit 1")
-push()
+file = open("test3", "w").close()
+#commit("Test Commit 2")
+#push()
